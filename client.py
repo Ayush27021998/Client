@@ -8,10 +8,6 @@ port=5000
 s.connect((host, port))
 print("Client Ready")
 
-def goto(linenum):
-    global line
-    line = linenum
-
 class Client_recieve(threading.Thread):
     def run(self):
         while True:
